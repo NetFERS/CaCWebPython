@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block imgheader %}
+<div>
+    <img src="{% static 'core/Carta.jpeg' %}" alt="subtitulo" id="subtitulo">
+</div>
+{% endblock imgheader %}
+{% block content %}
+<main>
+    <div>
+        <section class="container-cart d-flex flex-grow-1">
+            <div>
+                <table class="tabla">
+                    <thead>
+                    <tr>
+                        <th colspan="6" class="titulotabla">Price list</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" class="titulocol1">Dish name</th>
+                        <th colspan="2" class="titulocol2">U$S</th>
+                    </tr>
+                    </thead>
+                    <tbody id="listone">
+                      
+                    </tbody>
+                </table>     
+            </div>
+            <div class="" id=''>
+            </div>
+        </section>
+    </div>
+</main>
+{% endblock content %}
+{% block final %}
+<script src="{% static 'core/js/list.js' %}"></script>
+{% endblock final %}
